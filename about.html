@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Services</title>
+    <link rel="shortcut icon" href="logo/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-thin-rounded/css/uicons-thin-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-thin-straight/css/uicons-thin-straight.css'>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+      <!--Updated Navbar-->
+      <div class="logo-image">
+          <img src="logo/logooupdt.png" style="height: 120px;" alt="">
+          <p>Building inner stability & <br>lasting hope.</p> 
+        </div>
+        <div class="menu-item">
+          <a href="index.html" class="hide-on-small-screen" title="Home">Home</a>
+          <a href="services.html" class="hide-on-small-screen" title="Services">Services</a>
+          <a href="about.html" class="hide-on-small-screen" id="current-page" title="About">About</a>
+        </div>
+    </nav>
+
+    <!--Menu button small-->
+    <div class="menu-button-small" title="Menu" onclick=showSideBarSm()><i class="fi fi-tr-circle-ellipsis"></i></div>
+    <div class="sidebar-small">
+        <a href="index.html" class="sidebar-menu" title="Home"><i class="fi fi-tr-house-chimney"></i></a>
+        <a href="services.html" title="Services"><i class="fi fi-tr-customer-care"></i></a>
+        <a href="about.html" id="current-page" title="About"><i class="fi fi-tr-information"></i></a>
+        <p onclick=hideSideBarSm() class="small-menus-xbtn" title="Close"><i class="fi fi-tr-circle-xmark"></i></p>
+      </div>
+
+    <!--Title-->
+    <section class="container-fluid hero-container">
+      <div class="hero-item-wrapper">
+        <div class="row hero-one">
+          <div class="col-lg-8 hero-wrapper">
+            <h2>About Me</h2>
+            <p>I am an author committed to helping individuals discover their inner strength and heal through self-reflection, mindfulness, and personal growth. With a calm and compassionate voice, my writing seeks to create a safe and hopeful space for readers who are navigating the complexities of life.</p>
+          </div>
+          <div class="col-lg-4 my-portrait-one">
+            <img src="images/about/author1.jpeg">
+          </div>
+        </div>
+        <div class="row hero-two">
+          <div class="col-lg-4 order-lg-1 order-2 my-portrait-two">
+              <img src="images/about/author2.jpg">
+            </div>
+          <div class="col-lg-8 order-lg-2 order-1 hero-wrapper">
+            <p><span>My mission is simple: </span>To inspire transformation by providing clarity, encouragement, and healing through words. My books and teachings are built on the belief that growth comes from understanding ourselves deeply and embracing the changes that shape us into stronger, more resilient individuals.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Form-->
+    <section class="container-fluid form-container" >
+      <div class="form-item-wrapper">
+        <div class="row form-header-wrapper">
+          <div class="col-lg-6 form-header-items">
+            <h2>Let’s connect—I’d love to hear from you.</h2>
+            <p>Whether you’re interested in my books, services, or simply want to share your story.</p>
+          </div>
+          <div class="col-lg-6 input-items">
+            <form action="">
+              <label for="" class="email-tag">Email</label>
+              <br>
+              <input type="email" name="" id="" placeholder="" required class="email-input">
+              <br>
+              <label for="">Name</label>
+              <br>
+              <input type="text" name="" id="" placeholder="" required class="name- input">
+              <br>
+              <label for="">Message</label>
+              <br>
+              <textarea name="" id="" class="message-input" required></textarea>
+              <br>
+              <button type="submit">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+        
+    
+    <!-- Footer -->
+    <footer class="container-fluid footer-container">
+      <div class="row">
+        <div class="col-lg-6 footer-info-left">
+          <p>author@email.com</p>
+          <p>123-456-7890</p>
+          <p>500 Terry Francine St. San Francisco, CA 94158</p>
+        </div>
+        <div class="col-lg-6 footer-info-right">
+          <p>Privacy Policy</p>
+          <p>Accessibility Statement</p>
+          <p>Terms & Conditions</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12 footer-copyrights">
+          © 2025 Author Name | All Rights Reserved
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS and custom scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
