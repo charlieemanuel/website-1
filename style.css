@@ -865,6 +865,7 @@ form button:hover{
     }
     form input, textarea{
         border:2px solid #687DAC;
+        margin-bottom: 7px;
     }
 }
 
@@ -915,6 +916,7 @@ form button:hover{
         text-align: center;
     }
 }
+
 
 
 
