@@ -42,11 +42,6 @@ nav a{
     font-weight: 400;
     font-style: normal;
     line-height: 60px;
-    transition: 0.3s;
-}
-
-nav a:hover{
-    color: #C8D9D3;
 }
 
 #current-page{
@@ -72,14 +67,9 @@ nav a:hover{
 .menu-button-small{
     position: fixed;
     z-index: 999;
-    right: 20px;
-    bottom: 90px;
+    right: 30px;
+    top: 55px;
     color: #789592;
-    background-color: #c8d9d393;
-    backdrop-filter: blur(3px);
-    padding-top: 7px;
-    padding: 10px;
-    border-radius: 10px;
     display: none;
     align-items: center;
     justify-content: center;
@@ -93,20 +83,30 @@ nav a:hover{
     align-items: center;
     justify-content: center;
     text-align: center;
+    transition: 0.3s;
+}
+
+.menu-button-small i:hover{
+    color: #e3e8e6;
 }
 
 /* Sidebar toggle */
 .sidebar-small{
     position: fixed;
     z-index: 1001;
-    bottom: 90px;
-    right: 20px;
-    background-color: #c8d9d393;
+    top: 0;
+    right: 0;
+    background-color: #C8D9D3;
+    width: 360px;
+    height: 100vh;
     backdrop-filter: blur(3px);
     padding-top: 7px;
     padding: 10px;
-    border-radius: 10px;
+    border-radius: 3px;
     display: none;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
     cursor: pointer;
 }
 
@@ -116,12 +116,17 @@ nav a:hover{
     justify-content: center;
     text-align: center;
     flex-direction: column;
-    font-size: 30px;
-    margin-bottom: 30px;
+    font-size: 24px;
+    margin-bottom: 40px;
     margin-top: 10px;
     text-decoration: none;
     color: #789592;
     width: 40px;
+    transition: 0.3s;
+}
+
+.sidebar-small a:hover{
+    color: #e3e8e6;
 }
 
 .sidebar-small p{
@@ -135,11 +140,16 @@ nav a:hover{
     margin-top: 10px;
     color: #789592;
     width: 40px;
+    transition: 0.3s;
+}
+
+.sidebar-small p:hover{
+    color: #e3e8e6;
 }
 
 .sidebar-small .small-menus-xbtn{
-    margin-top: 20px;
-    margin-bottom: 0;
+    margin-top: 30px;
+    margin-bottom: 50px;
 }
 
 @media(max-width: 930px){
@@ -153,12 +163,17 @@ nav a:hover{
         display: flex;
     }
     .logo-image{
-        align-items: center;
-        justify-content: center;
-        width: 100%;
+        width: 75%;
+        justify-content: flex-start;
     }
     .menu-item{
         display: none;
+    }
+}
+
+@media(max-width: 500px){
+    .sidebar-small{
+        width: 100%;
     }
 }
 
@@ -865,7 +880,6 @@ form button:hover{
     }
     form input, textarea{
         border:2px solid #687DAC;
-        margin-bottom: 7px;
     }
 }
 
@@ -916,8 +930,5 @@ form button:hover{
         text-align: center;
     }
 }
-
-
-
 
 
